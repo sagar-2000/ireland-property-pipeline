@@ -1,0 +1,28 @@
+version: 2
+
+sources:
+  - name: raw
+    database: ireland-property-pipeline
+    schema: raw_data
+    tables:
+      - name: property_price_register
+        description: "Raw Irish Property Price Register data loaded from PPR CSV"
+        columns:
+          - name: date_of_sale
+            description: "Date the property was sold"
+          - name: address
+            description: "Full address of the property"
+          - name: county
+            description: "County where the property is located"
+          - name: eircode
+            description: "Eircode postal code"
+          - name: price
+            description: "Sale price in euros (raw string with € symbol)"
+          - name: not_full_market_price
+            description: "Whether the sale was not at full market price"
+          - name: vat_exclusive
+            description: "Whether price is VAT exclusive"
+          - name: description_of_property
+            description: "Type of property (new/second-hand)"
+          - name: property_size_description
+            description: "Size category of the property"

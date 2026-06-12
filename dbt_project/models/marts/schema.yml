@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: mart_county_trends
+    description: "Average and median property prices by county and year"
+    columns:
+      - name: county
+        tests: [not_null]
+      - name: sale_year
+        tests: [not_null]
+      - name: avg_price
+        tests: [not_null]
+
+  - name: mart_dublin_analysis
+    description: "Dublin property prices broken down by postcode and year"
+
+  - name: mart_yoy_growth
+    description: "Year-on-year price and sales growth by county"
+    columns:
+      - name: yoy_price_growth_pct
+        description: "% change in avg price vs previous year"

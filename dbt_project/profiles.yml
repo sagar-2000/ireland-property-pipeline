@@ -1,0 +1,12 @@
+ireland_property:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: ireland-property-pipeline
+      dataset: dbt_dev
+      keyfile: ../ireland-property-pipeline-311b327ba4c4.json
+      location: EU
+      threads: 4
+      timeout_seconds: 300
