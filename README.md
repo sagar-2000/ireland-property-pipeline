@@ -35,7 +35,7 @@ Looker Studio Dashboard (2 pages)
 
 ## 📊 Dashboard
 
-👉 [View Live Dashboard](#) <!-- replace with your Looker Studio share link -->
+👉 [View Live Dashboard](https://datastudio.google.com/reporting/d40f9f2f-1667-42f9-9567-68e72f041998)
 
 **Page 1 — National Overview**
 - Ireland bubble map: avg price by county
